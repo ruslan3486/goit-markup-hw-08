@@ -1,0 +1,68 @@
+
+@media screen and (max-width: 767px){
+    .about-programs{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    .about-programs{
+        display: none;
+    } 
+}
+@media screen and (min-width: 1200px){
+
+    .about-programs {
+        display: block;
+        padding-top: 47px;
+        padding-bottom: 94px;
+    }
+    .about-programs__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-top: -30px;
+    
+    }
+    .about-programs__title {
+    
+        margin-bottom: 50px;
+        @include font(700, 36px, 1.17);
+        
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primaru-text-color);
+    }
+    
+    .about-programs__img {
+        position: relative;
+    }
+    
+    .about-programs__application {
+        width: 100%;
+        height: 70px;
+        padding-top: 27px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    
+    
+        text-align: center;
+        font-style: normal;
+        @include font(700, 14px, 1.14);
+       
+        background: rgba(47, 48, 58, 0.8);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+    }
+    
+    .about-programs__item {
+        position: relative;
+        flex-basis: calc(100% / 3 - 30px);
+        margin-left: 30px;
+        margin-top: 30px;
+    
+    }
+    
+}

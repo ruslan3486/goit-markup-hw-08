@@ -1,0 +1,184 @@
+.footer {
+
+    
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--color-efective);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo_theme_dark{
+    display: inline-block;
+    margin-bottom: 30px;
+    color: var(--color-text-white);
+ 
+ 
+}
+
+
+
+
+
+
+.footer__item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+
+
+.footer__link-info {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  @include font(400, 14px, 1.7);
+    
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+
+.footer__adress-map {
+    @include font(400, 14px, 1.7);
+    
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* Иконки в подвале */
+
+
+.footer__social {
+    display: block;
+    margin-left: 70px;
+}
+
+.footer__social-title {
+    display: block;
+    margin-bottom: 20px;
+    @include font(700, 14px, 1.14); 
+   
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.footer__social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__social-item {
+&:not(:last-child) {
+    margin-right: 10px;
+}
+}
+
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration) var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+}
+
+
+
+
+
+
+.footer__social-icon {
+    fill: var(--color-text-white);
+    width: 20px;
+    height: 20px;
+    transition: fill var(--transition-duration) var(--timing-function);
+
+    .footer__social-link:hover .footer__social-linkr:focus,
+    &:hover,
+    &:focus {
+
+        fill: var(--color-text-white);
+    }
+}
+
+.subscription__text {
+    margin-bottom: 20px;
+    @include font(700, 14px, 1.14);
+    
+   
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-text-white);
+}
+
+.subscription__button {
+   
+    @include font(700, 16px, 1.88);
+   
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    justify-content: center;
+    color: var(--color-text-white);
+
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+}
+
+.subscription {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.subscription__email {
+    padding-left: 16px;
+    color: var(--color-text-white);
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+}
+
+
+.subscription-icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+}
