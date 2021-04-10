@@ -2,14 +2,14 @@
 
    .hero{
    
-    
+    background: rgba(47, 48, 58, 0.4);
     max-width: 480px;
-    height: auto;
+    height: 400px;
     margin: 0 auto;
     background-size: 480px;
-    background-image: url("../../sass/images/Foto-mobile/Hero/Header-img.jpg");
+    background-image: url("../images/Foto-mobile/Hero/Header-img.jpg");
     background-repeat: no-repeat;
-  
+    
     text-align: center;
     
 }
@@ -17,7 +17,7 @@
    (min-resolution: 192dpi),
    (min-resolution: 2dppx){
        .hero{
-           background-image: url("../../sass/images/Foto-mobile/Hero/Header-img@2x.jpg");
+           background-image: url("../images/Foto-mobile/Hero/Header-img@2x.jpg");
        }
     }
   .hero__title{
@@ -59,11 +59,11 @@
     
     max-width: 768px;
     height:  400px;   
-    background-image: url("../../sass/images/Foto-tablet/Hero/Header-img.jpg");
+    background-image: url("../images/Foto-tablet/Hero/Header-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    height: auto;
+   
     margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
     .hero{
-        background-image: url("../../sass/images/Foto-tablet/Hero/Header-img@2x.jpg");
+        background-image: url("../images/Foto-tablet/Hero/Header-img@2x.jpg");
     }
 }
 
@@ -105,25 +105,29 @@
 
 
 @media screen and (min-width: 1200px){
-
+        .hero .container{
+            padding-top: 200px; 
+            padding-bottom: 200px;
+        }
     .hero{
    
     
         max-width: 1200px;
         height: 600px;
-        margin: 0 auto;
+        
         background-size: 1200px;
-        background-image: url("../../sass/images/Desktop/Hero/Img.jpg");
+        background-image: url("../images/Desktop/Hero/Img.jpg");
         background-repeat: no-repeat;
         text-align: center;
-        height: auto;
+        
+        margin: 0 auto;
         
     }
      @media (min-device-pixel-ratio: 2),
        (min-resolution: 192dpi),
        (min-resolution: 2dppx){
            .hero{
-               background-image: url("../../sass/images/Desktop/Hero/Img@2x.jpg");
+               background-image: url("../images/Desktop/Hero/Img@2x.jpg");
            }
         }
 
