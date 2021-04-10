@@ -129,6 +129,13 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header .logo {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}
+
 .header {
   margin: 0 auto;
   border: 1px solid #ececec;
@@ -217,6 +224,7 @@ img {
 }
 
 .mobile-menu.is-open {
+  z-index: 1;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -687,15 +695,9 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .features__list {
-    padding-top: 60px;
-  }
-}
-
 .features {
   margin-bottom: 30px;
-  margin-top: 29px;
+  margin-top: 58px;
 }
 
 .features__list {
@@ -721,10 +723,9 @@ img {
           align-items: center;
   margin-bottom: 30px;
   max-width: 100%;
-  background: #F5F4FA;
+  background-color: #F5F4FA;
   border-radius: 4px;
   padding: 25px 190px;
-  background-color: var(--team-background);
 }
 
 .features__title {
@@ -1103,14 +1104,23 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__box-contact {
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .logo_theme_dark {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--color-text-white);
 }
 
@@ -1119,7 +1129,7 @@ img {
 }
 
 .footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__link-info {
@@ -1149,10 +1159,11 @@ img {
 /* Иконки в подвале */
 .footer__social {
   display: block;
-  margin-left: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__social-title {
+  text-align: center;
   display: block;
   margin-bottom: 20px;
   font-weight: 700;
@@ -1214,6 +1225,7 @@ img {
 }
 
 .subscription__text {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1227,6 +1239,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  margin-left: 140px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1258,9 +1271,9 @@ img {
 .subscription__email {
   padding-left: 16px;
   color: var(--color-text-white);
-  width: 358px;
+  width: 450px;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: transparent;
 }
@@ -1269,6 +1282,79 @@ img {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__box-contact {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .footer__social {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 165px;
+  }
+  .subscription__form {
+    margin-left: 159px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    max-width: 1200px;
+  }
+  .footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .footer__container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer__social {
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 70px;
+  }
+  .footer__social-title {
+    text-align: inherit;
+  }
+  .subscription__text {
+    text-align: inherit;
+  }
+  .subscription {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscription__form {
+    margin: 0;
+  }
+  .subscription__button {
+    margin-left: 12px;
+  }
+  .subscription__email {
+    width: 358px;
+    margin-bottom: 0px;
+  }
 }
 
 .ikon-list {

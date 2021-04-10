@@ -1,13 +1,8 @@
 
-@media screen and (max-width: 768px){
-    .features__list{
-    padding-top: 60px;
 
-    }
-}
 .features{
     margin-bottom: 30px;
-    margin-top: 29px;
+    margin-top: 58px;
 }
     
 .features__list{
@@ -25,10 +20,10 @@
     align-items: center;
     margin-bottom: 30px;
     max-width: 100%;
-   background: #F5F4FA;
+   background-color: #F5F4FA;
    border-radius: 4px;
    padding: 25px 190px;
-    background-color: var(--team-background);
+    
 }
 .features__title{
 
@@ -114,11 +109,7 @@ color: #757575;
         margin-top: -30px;
     }
 
-    .features__item {
-       
-        
-       
-    }
+    
 
     .features__container-icon {
         display: flex;
