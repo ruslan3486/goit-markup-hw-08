@@ -1,20 +1,14 @@
-@media screen and (max-width: 768px) {
-   .header .logo {
-        margin-top: 16px;
-        margin-bottom: 16px;
+
+   .header  {
+        margin: 0 auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 1px solid #ececec;
     }
-}
-
-
-.header{
-    
-    margin: 0 auto;
-    border: 1px solid #ececec;   
-}
-
-
-
-.logo{
+  
+   .logo{
+       padding-top: 16px;
+       padding-bottom: 16px;
     font-family: var(--secondary-font);
     @include font(700, 24px, 1.16);
     letter-spacing: 0.03em;
@@ -29,10 +23,18 @@
          
       }
 
-      .logo__color {
+       .logo__color {
            
             color: var(--accent-color);
            } 
+
+
+
+
+
+
+
+      
              
              
 
@@ -55,10 +57,7 @@
             fill: var(--accent-color);
             outline: none;
         }
-      .logo{
-          padding-top: 16px;
-          padding-bottom: 16px;
-      }  
+      
     }
     .burger-btn__icon{
         width: 40px;
@@ -68,6 +67,11 @@
         justify-content: center;
         
     }
+     
+         .mobile-menu__item:nth-child(-n+2){ 
+             margin-bottom: 32px;
+         }
+     
     .mobile-menu{
         position: fixed;
         top: 0;
@@ -117,24 +121,17 @@
     }
     
     
-    .mobile-menu {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-      }
     
-      .mobile-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-      }
+    
+     
     .mobile-menu__link{
         @include font(500, 40px, 2.93);
         letter-spacing: 0.02em;
         margin-left: 40px;
-    
+        color: var(--primaru-text-color);
         &:not(:last-child){
             margin-bottom: 32px;
+            font-style: normal;
         }
         
            &:hover

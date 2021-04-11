@@ -1,18 +1,18 @@
  
 
    .hero{
-    height: 400px;
+   
     background-color: #555555;
     margin-bottom: 29px;
-    max-width: 480px;
-    
+    max-width: 100%;
+    background-position: center;
     margin: 0 auto;
-    background-size: 480px;
+    background-size: cover;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url("../images/Foto-mobile/Hero/Header-img.jpg");
     background-repeat: no-repeat;
     
-    text-align: center;
+    
     
 }
  @media (min-device-pixel-ratio: 2),
@@ -24,7 +24,9 @@
        }
     }
   .hero__title{
-    padding-bottom: 30px;
+     
+     
+    margin-bottom: 30px;
     @include font(900, 26px, 1.61);
     text-align: center;
     letter-spacing: 0.06em;
@@ -96,15 +98,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
     }
-    .hero__title{
-        padding-bottom: 30px;
-        @include font(900, 26px, 1.61);
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: var(--color-text-white);
-       
-      }
+    
 }
 
 
@@ -143,15 +137,16 @@
     margin-left: auto;
     margin-right: auto;
     width: 696px;
-    margin-bottom: 30px;
- 
-     @include font(900, 44px, 1.36);
+    @include font(900, 44px, 1.36);
+    }
+       
+
    
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-white);
-}
+    
+    
+     
+    
+ 
 
 /*Кнопка "заказать услугу"*/
 
