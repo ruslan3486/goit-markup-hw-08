@@ -1,8 +1,8 @@
 
 
 .features{
-    margin-bottom: 30px;
-    margin-top: 58px;
+    padding-top: 58px;
+    padding-bottom: 60px;
 }
     
 .features__list{
@@ -56,8 +56,13 @@ color: #757575;
 @media screen and (min-width: 768px) {
     .features .container{
         width: 768px;
-        padding-top: 60px;
+      
         display: flex;
+
+    }
+    .features{
+          padding-top: 60px;
+         
     }
 
     .features__list{

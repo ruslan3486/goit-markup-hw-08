@@ -73,6 +73,9 @@
          }
      
     .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: fixed;
         top: 0;
         left: 50%;
@@ -122,9 +125,9 @@
     
     
     
-    
+   
      
-    .mobile-menu__link{
+    .mobile-menu__item {
         @include font(500, 40px, 2.93);
         letter-spacing: 0.02em;
         margin-left: 40px;
@@ -145,10 +148,7 @@
         
     
         
-      .mobile-menu__list-contact{
-        margin-top: 302px;
-    
-      }
+     
      
      .mobile-menu__link-tel{
         @include font(500, 34px, 1.17);
@@ -298,7 +298,7 @@
         position: relative;
           padding-top: 32px;
           padding-bottom: 32px;
-     
+          font-style: normal;
           font-weight: 500;
          font-size: 14px;
           line-height: 1.14;

@@ -76,6 +76,8 @@ img {
 
 .container {
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .header .container {
@@ -98,7 +100,7 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     margin: auto;
-    width: 450px;
+    width: 480px;
   }
 }
 
@@ -193,6 +195,16 @@ img {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 50%;
@@ -248,7 +260,7 @@ img {
   height: 40px;
 }
 
-.mobile-menu__link {
+.mobile-menu__item {
   font-weight: 500;
   font-size: 40px;
   line-height: 2.93;
@@ -257,17 +269,13 @@ img {
   color: var(--primaru-text-color);
 }
 
-.mobile-menu__link:not(:last-child) {
+.mobile-menu__item:not(:last-child) {
   margin-bottom: 32px;
   font-style: normal;
 }
 
-.mobile-menu__link:hover {
+.mobile-menu__item:hover {
   color: var(--accent-color);
-}
-
-.mobile-menu__list-contact {
-  margin-top: 302px;
 }
 
 .mobile-menu__link-tel {
@@ -423,6 +431,7 @@ img {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

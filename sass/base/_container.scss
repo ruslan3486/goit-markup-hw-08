@@ -1,6 +1,8 @@
 .container{
   
  width: 100%;
+ padding-right: 15px;
+ padding-left: 15px;
  .header &{
      display: flex;
      align-items: center;
@@ -15,7 +17,8 @@
     
      .container{
          margin: auto;
-         width: 450px;
+         width: 480px;
+
      }
        
     

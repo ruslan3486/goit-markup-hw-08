@@ -1,11 +1,12 @@
 .client {
     
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .client__title {
     margin-bottom: 30px;
-    margin-top: 60px;
+    
     font-style: normal;
     @include font(700, 28px, 1.17);
     
@@ -39,7 +40,7 @@
         align-items: center;
         justify-content: center;
         fill: var(--fill-icon);
-        width: 210px;
+        
         height: 90px;
         border: 1px solid var(--fill-icon);
         border-radius: 4px;
@@ -71,6 +72,11 @@
 }
 
 @media screen and (min-width: 1200px){
+
+     .client {
+         padding-top: 94px;
+         padding-bottom: 94px;
+     }
 .client__link {
     width: 170px;
 }
@@ -78,7 +84,7 @@
     flex-wrap: nowrap;
 }
 .client__title{
-    padding-top: 47px;
+    
     margin-bottom: 50px;
     @include font(700, 36px, 1.17);
 }
