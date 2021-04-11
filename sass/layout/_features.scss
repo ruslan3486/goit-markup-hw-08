@@ -15,11 +15,12 @@
   
 }
 .features__container-icon {
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-    max-width: 100%;
+    
    background-color: #F5F4FA;
    border-radius: 4px;
    
@@ -30,27 +31,23 @@
     height: 70px;
 
 }
-.features__title{
+ .features__title {
+     margin-bottom: 10px;
+     @include font(700, 14px, 1.14);
 
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--nav-color);
-    text-align: center;
-}
-.features__text{
-    font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: var(--primaru-text-color);
+     text-align: center;
+ }
 
-}
 
+ .features__text {
+     @include font(400, 14px, 1.7);
+
+     letter-spacing: 0.03em;
+     color: var(--title-text-color)
+ }
 
 
 @media screen and (min-width: 768px) {
@@ -66,7 +63,7 @@ color: #757575;
     }
 
     .features__list{
-           display: -webkit-box;
+        display: -webkit-box;
         flex-wrap: wrap;
         justify-content: center;
         margin-left: -30px;
@@ -84,17 +81,12 @@ color: #757575;
     
 }
 .features__title {
+    text-align: inherit;}
+}
 
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--nav-color);
-    text-align: center;
-}
-}
+    
+    
+
 
 
 
@@ -120,25 +112,7 @@ color: #757575;
     }
 
     
-
-    .features__container-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
-        padding: 25px 100px;      
-        height: 120px;
-        background: #F5F4FA;
-        border-radius: 15px;
-    }
-
-    
-
-
-
-
-
-    .features__title {
+.features__title {
         margin-bottom: 10px;
         @include font(700, 14px, 1.14);
 
@@ -146,16 +120,21 @@ color: #757575;
         text-transform: uppercase;
         color: var(--primaru-text-color);
     }
-
-
-
-    .features__text {
-        @include font(400, 14px, 1.7);
-
-        letter-spacing: 0.03em;
-        color: var(--title-text-color)
+    .features__container-icon{
+        padding: 25px 102px;
     }
-
-
 }
+    
+
+
+
+
+    
+
+
+
+   
+
+
+
 
