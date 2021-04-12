@@ -1,6 +1,6 @@
 .container{
   
- width: 100%;
+ 
  padding-right: 15px;
  padding-left: 15px;
  .header &{
@@ -16,8 +16,8 @@
 @media screen and (min-width: 480px){  
     
      .container{
-         margin: auto;
-         width: 480px;
+         margin: 0 auto;
+         width: 448px;
 
      }
        
