@@ -192,9 +192,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: fixed;
   top: 0;
   left: 50%;
@@ -203,12 +200,17 @@ img {
   height: 100vh;
   background-color: #ffffff;
   padding: 48px 40px;
+  overflow-y: scroll;
   -webkit-transform: translateY(-100%) translateX(-50%);
           transform: translateY(-100%) translateX(-50%);
   -webkit-transition: -webkit-transform var(--transition-duration) var(--timing-function);
   transition: -webkit-transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function), -webkit-transform var(--transition-duration) var(--timing-function);
+}
+
+.mobile-menu__list-contact {
+  padding-top: 302px;
 }
 
 .mobile-menu {
@@ -252,9 +254,8 @@ img {
 .mobile-menu__item {
   font-weight: 500;
   font-size: 40px;
-  line-height: 2.93;
+  line-height: 1.18;
   letter-spacing: 0.02em;
-  margin-left: 40px;
   color: var(--primaru-text-color);
 }
 
@@ -290,12 +291,12 @@ img {
   color: var(--accent-color);
 }
 
-.mobile-menu__item-contact {
-  margin-left: 40px;
-}
-
 .mobile-menu__item-contact:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobile-menu__link_color {
+  color: var(--accent-color);
 }
 
 .mobile-menu__list-ikon {
@@ -305,8 +306,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 64px;
-  margin-left: 40px;
+  padding-top: 64px;
   padding-bottom: 48px;
 }
 
