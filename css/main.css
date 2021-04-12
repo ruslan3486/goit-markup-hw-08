@@ -49,6 +49,7 @@ ol {
 
 img {
   height: auto;
+  max-width: 100%;
   display: block;
 }
 
@@ -196,7 +197,7 @@ img {
   top: 0;
   left: 50%;
   width: 100vw;
-  min-width: 480px;
+  max-width: 480px;
   height: 100vh;
   background-color: #ffffff;
   padding: 48px 40px;
