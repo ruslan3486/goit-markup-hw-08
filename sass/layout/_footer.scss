@@ -8,14 +8,12 @@
 }
 
 .footer__container {
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+    display: block;
+    align-items: baseline;
     
 }
 .footer__box-contact{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     text-align: center;
     
 }
@@ -76,7 +74,7 @@
 
 .footer__social {
     display: block;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     
 }
 
@@ -156,7 +154,7 @@
    
     @include font(700, 16px, 1.88);
     
-    margin-left: 140px;
+    
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -207,8 +205,8 @@
         
     }
     .footer__social {
-        display: block;
-        margin-bottom: 0px;
+        
+
         margin-left: 165px;
     }
     .subscription__form{
@@ -233,7 +231,7 @@
       }
       .footer__social {
           display: block;
-          margin-bottom: 0px;
+          padding-bottom: 0px;
           margin-left: 70px;
       }
       .footer__social-title{

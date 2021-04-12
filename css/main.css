@@ -1051,20 +1051,14 @@ img {
 }
 
 .footer__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .footer__box-contact {
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -1109,7 +1103,7 @@ img {
 /* Иконки в подвале */
 .footer__social {
   display: block;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 
 .footer__social-title {
@@ -1189,7 +1183,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  margin-left: 140px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1254,8 +1247,6 @@ img {
     text-align: center;
   }
   .footer__social {
-    display: block;
-    margin-bottom: 0px;
     margin-left: 165px;
   }
   .subscription__form {
@@ -1279,7 +1270,7 @@ img {
   }
   .footer__social {
     display: block;
-    margin-bottom: 0px;
+    padding-bottom: 0px;
     margin-left: 70px;
   }
   .footer__social-title {
