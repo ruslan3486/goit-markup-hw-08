@@ -50,7 +50,7 @@
     .burger-btn{
         border: none;
         padding: 0;
-        
+        background-color: transparent;
     
         &:hover{
         
@@ -62,9 +62,10 @@
     .burger-btn__icon{
         width: 40px;
         height: 40px;
-       
+       fill: #000000;
+      } 
         
-    }
+    
     
      
          .mobile-menu__item:nth-child(-n+2){ 
