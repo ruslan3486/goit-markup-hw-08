@@ -1,14 +1,12 @@
 
    .header  {
         margin: 0 auto;
-        padding-top: 15px;
-        padding-bottom: 15px;
+       
         border: 1px solid #ececec;
     }
   
    .logo{
-       padding-top: 16px;
-       padding-bottom: 16px;
+       
     font-family: var(--secondary-font);
     @include font(700, 24px, 1.16);
     letter-spacing: 0.03em;
@@ -16,6 +14,8 @@
 }
 
 .logo_theme_light{
+    padding-top: 16px;
+    padding-bottom: 16px;
           animation-duration: 1000ms;
           animation-iteration-count: 2;
          
@@ -51,7 +51,8 @@
         border: none;
         padding: 0;
         background-color: transparent;
-    
+       padding-top: 10px;
+       padding-bottom: 10px;
         &:hover{
         
             fill: var(--accent-color);
@@ -231,6 +232,8 @@
           
       }
       .logo_theme_light{
+          padding-top: 26px;
+          padding-bottom: 26px;
           margin-right: 88px;
       }
 
@@ -289,6 +292,7 @@
    
    
     .menu__item{
+      
    
     &:not(:last-child) {
         margin-right: 50px;

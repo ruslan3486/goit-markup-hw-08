@@ -49,7 +49,6 @@ ol {
 
 img {
   height: auto;
-  width: 100%;
   display: block;
 }
 
@@ -128,14 +127,10 @@ img {
 
 .header {
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
   border: 1px solid #ececec;
 }
 
 .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 24px;
@@ -145,6 +140,8 @@ img {
 }
 
 .logo_theme_light {
+  padding-top: 16px;
+  padding-bottom: 16px;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-iteration-count: 2;
@@ -168,6 +165,8 @@ img {
   border: none;
   padding: 0;
   background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .burger-btn:hover {
@@ -355,6 +354,8 @@ img {
     padding-bottom: 21px;
   }
   .logo_theme_light {
+    padding-top: 26px;
+    padding-bottom: 26px;
     margin-right: 88px;
   }
   .contact__item:not(:last-child) {
@@ -868,6 +869,10 @@ img {
   letter-spacing: 0.03em;
 }
 
+.photo__img {
+  width: 100%;
+}
+
 .photo__item {
   margin-bottom: 30px;
   background: var(--color-text-white);
@@ -1261,6 +1266,9 @@ img {
 @media screen and (min-width: 1200px) {
   .footer .container {
     max-width: 1200px;
+  }
+  .logo_theme_dark {
+    margin-bottom: 50px;
   }
   .footer__item:not(:last-child) {
     margin-bottom: 9px;
