@@ -204,18 +204,40 @@
         letter-spacing: 0.02em;
         color: var(--accent-color);
 
-        &::after{
-            position: absolute;
-            content: '';
-            bottom: 0;
-            right: 0;
-            display: block;
-            height: 100%;
+       
+          
+          &::after {
+              position: absolute;
+              content: '';
+             bottom: 0;
+             right: 0;
+              display: block;
+              height: 100%;
            
-            border: 1px solid rgba(33, 33, 33, 0.2);
-            transform: rotate(180deg) translateX(-10px);
-          }
-      }
+              border: 1px solid rgba(33, 33, 33, 0.2);
+             transform: rotate(180deg) translateX(-10px);
+
+         }}
+
+    @media screen and (min-width: 768px){
+         .mobile-menu__item-ikon:not(:last-child){
+             margin-right: 20px;
+         }}
+        
+
+    //    mobile-menu__item-ikon{
+    //        position: relative;
+    //        height: 100%;
+    //     &:not(:last-child){
+    //         padding-right: 2%;
+    //         border-right: 1px solid rgba(33, 33, 33, 0.2);
+    //     }
+    //     &:not(:last-child){
+    //         padding-left: 2%;
+    //         border-left: 1px solid rgba(33, 33, 33, 0.2);
+    //     }
+          
+    //   }
 
   
 

@@ -333,6 +333,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-menu__item-ikon:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .burger-btn {
     display: none;
   }
@@ -531,7 +537,7 @@ img {
 }
 
 .filter {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,13 +593,29 @@ img {
 }
 
 .portfolio__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
 }
 
 .portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 30px;
+}
+
+.portfolio__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .portfolio__title {
@@ -663,13 +685,29 @@ img {
 }
 
 .portfolio__box {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: none;
 }
 
 .portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 30px;
+}
+
+.portfolio__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .portfolio__title {
@@ -765,10 +803,13 @@ img {
 }
 
 .footer {
-  margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--color-efective);
+}
+
+.subscription__form {
+  text-align: center;
 }
 
 .footer__container {
@@ -907,6 +948,8 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -919,16 +962,6 @@ img {
   min-width: 200px;
   height: 50px;
   background: var(--accent-color);
-}
-
-.subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 .subscription__email {
@@ -975,8 +1008,8 @@ img {
   .footer .container {
     max-width: 1200px;
   }
-  .logo_theme_dark {
-    margin-bottom: 50px;
+  .footer__box-contact {
+    text-align: inherit;
   }
   .footer__item:not(:last-child) {
     margin-bottom: 9px;

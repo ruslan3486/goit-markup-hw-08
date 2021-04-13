@@ -4,13 +4,18 @@
 }
 
 .portfolio__box {
-
+     flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
 .portfolio__item{
+    display: flex;
     margin-top: 30px;
+}
+.portfolio__link{
+    display: flex;
+    flex-direction: column;
 }
  
  .portfolio__title {
