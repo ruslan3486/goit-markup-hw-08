@@ -75,6 +75,9 @@
     perspective: 1000px;
 }
 @media screen and (min-width: 768px){
+    .portfolio-link{
+        padding-top: 30px;
+    }
     .portfolio {
         display: flex;
         flex-wrap: wrap;
@@ -98,6 +101,10 @@
 
 }
 @media screen and (min-width: 1200px){
+    .portfolio-link{
+        padding-top: 50px;
+        padding-bottom: 94px;
+    }
     .portfolio__item{
  flex-basis: calc(100% / 3 - 30px);
     }
