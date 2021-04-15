@@ -87,7 +87,8 @@
     }
 
     .photo__item {
-        flex-basis: calc(100% / 4 - 30px);}
+        flex-basis: calc(100% / 4 - 30px);
+        margin-bottom: 0; }
 
        .photo__title{
            margin-bottom: 50px;

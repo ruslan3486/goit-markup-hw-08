@@ -98,7 +98,7 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
   .container {
     margin: 0 auto;
     width: 480px;
@@ -186,6 +186,9 @@ img {
 }
 
 .mobile-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,10 +211,6 @@ img {
   transition: -webkit-transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function), -webkit-transform var(--transition-duration) var(--timing-function);
-}
-
-.mobile-menu__list-contact {
-  padding-top: 302px;
 }
 
 .mobile-menu {
@@ -304,11 +303,21 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 64px;
   padding-bottom: 48px;
+}
+
+.mobile-menu__item-ikon {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__item-ikon:last-child {
+  border-right: none;
 }
 
 .mobile-menu__link-ikon {
@@ -318,18 +327,7 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-}
-
-.mobile-menu__link-ikon::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  display: block;
-  height: 100%;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(180deg) translateX(-10px);
-          transform: rotate(180deg) translateX(-10px);
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -528,8 +526,6 @@ img {
   }
 }
 
-/*Подсвечивание страницы*/
-/*Ховер и фокус емейла и телефона с иконками*/
 .hero {
   background-color: #555555;
   margin-bottom: 29px;
@@ -674,13 +670,6 @@ img {
   padding-bottom: 60px;
 }
 
-.features__list {
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .features__item {
   margin-bottom: 30px;
 }
@@ -728,9 +717,6 @@ img {
 @media screen and (min-width: 768px) {
   .features .container {
     width: 768px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .features {
     padding-top: 60px;
@@ -739,18 +725,17 @@ img {
     display: -webkit-box;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: -30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .features__item {
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
         flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+  }
+  .features__item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+  .features__item:nth-child(2n + 1) {
+    margin-left: 0;
   }
   .features__container-icon {
     display: -webkit-box;
@@ -780,7 +765,14 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin-left: -30px;
-    margin-top: -30px;
+  }
+  .features__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin: 0px;
+  }
+  .features__item:not(:last-child) {
+    margin-right: 30px;
   }
   .features__title {
     margin-bottom: 10px;
@@ -792,7 +784,7 @@ img {
     color: var(--primaru-text-color);
   }
   .features__container-icon {
-    padding: 25px 101px;
+    padding: 0;
   }
 }
 
@@ -945,6 +937,7 @@ img {
   .photo__item {
     -ms-flex-preferred-size: calc(100% / 4 - 30px);
         flex-basis: calc(100% / 4 - 30px);
+    margin-bottom: 0;
   }
   .photo__title {
     margin-bottom: 50px;
@@ -1377,7 +1370,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
@@ -1405,8 +1397,15 @@ img {
   pointer-events: none;
 }
 
+@media screen and (max-width: 480px) {
+  .button-close {
+    top: 8 px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .modal {
+    height: auto;
     width: 100vw;
     max-width: 450px;
   }
