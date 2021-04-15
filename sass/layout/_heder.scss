@@ -1,13 +1,13 @@
      
        
+    .header  {
+        margin: 0 auto;
+        border: 1px solid #ececec;
         
+    }    
        
     
-   .header  {
-        margin: 0 auto;
-       
-        border: 1px solid #ececec;
-    }
+   
   
    .logo{
        
@@ -23,7 +23,7 @@
           animation-duration: 1000ms;
           animation-iteration-count: 2;
          
-          color: var(--primaru-text-color);
+          color: var(--primary-text-color);
          
       }
 
@@ -129,7 +129,7 @@
         @include font(500, 40px, 1.18);
         letter-spacing: 0.02em;
         
-        color: var(--primaru-text-color);
+        color: var(--primary-text-color);
         &:not(:last-child){
             margin-bottom: 32px;
             font-style: normal;
@@ -185,9 +185,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 64px;
         
-        padding-bottom: 48px;
     }
      .mobile-menu__item-ikon{
         border-right: 1px solid rgba(33, 33, 33, 0.2);
@@ -205,10 +203,13 @@
         padding-right: 10px;}
 
        
-        @media screen and (max-width: 480px){
+        @media screen and (max-width: 360px){
             .mobile-menu__link-tel {
               font-weight: 500;
                font-size: 26px;
+          }
+          .mobile-menu__item{
+              font-size: 30px;
           }
       }
 
@@ -318,7 +319,7 @@
          font-size: 14px;
           line-height: 1.14;
           letter-spacing: 0.02em;
-          color: var(--primaru-text-color);
+          color: var(--primary-text-color);
           transition: color var(--transition-duration) var(--timing-function);
      
           &:hover,
@@ -375,7 +376,7 @@
         margin-right: 93px;
         padding-top: 24px;
         padding-bottom: 25px;
-         color: var(--primaru-text-color);
+         color: var(--primary-text-color);
         
      }
      .logo__color {

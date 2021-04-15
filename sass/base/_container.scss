@@ -1,6 +1,5 @@
 .container{
   
- 
  padding-right: 15px;
  padding-left: 15px;
  .header &{
@@ -13,22 +12,13 @@
     padding: 118px 60px;
     text-align: center;
 }
-@media screen and (min-width: 767px){  
-    
-     .container{
-         margin: 0 auto;
-         width: 480px;
 
-     }
-       
-    
-}
-
+ 
 
 @media screen and (min-width: 768px){ 
     .container{
         width: 768px;
-        
+        margin: 0 auto;
 
     }
     .hero .container{
@@ -50,18 +40,3 @@
     }
    
 }
-// .container {
-
-
-//     width: 1200px;
-//     margin: 0 auto;
-//     padding-left: 15px;
-//     padding-right: 15px;
-
-//     .header & {
-//         display: flex;
-//         align-items: center;
-
-//     }
-
-// }

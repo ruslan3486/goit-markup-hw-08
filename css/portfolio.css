@@ -16,7 +16,7 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #2196F3;
   --color-text-white: #FFFFFF;
-  --primaru-text-color: #212121;
+  --primary-text-color: #212121;
   --title-text-color: #757575;
   --color-efective: #2F303A;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -98,16 +98,10 @@ img {
   text-align: center;
 }
 
-@media screen and (min-width: 767px) {
-  .container {
-    margin: 0 auto;
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    margin: 0 auto;
   }
   .hero .container {
     padding: 102px 220px;
@@ -147,7 +141,7 @@ img {
           animation-duration: 1000ms;
   -webkit-animation-iteration-count: 2;
           animation-iteration-count: 2;
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 .logo__color {
@@ -256,7 +250,7 @@ img {
   font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 .mobile-menu__item:not(:last-child) {
@@ -308,8 +302,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 64px;
-  padding-bottom: 48px;
 }
 
 .mobile-menu__item-ikon {
@@ -330,10 +322,13 @@ img {
   padding-right: 10px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   .mobile-menu__link-tel {
     font-weight: 500;
     font-size: 26px;
+  }
+  .mobile-menu__item {
+    font-size: 30px;
   }
 }
 
@@ -439,7 +434,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primaru-text-color);
+    color: var(--primary-text-color);
     -webkit-transition: color var(--transition-duration) var(--timing-function);
     transition: color var(--transition-duration) var(--timing-function);
   }
@@ -494,7 +489,7 @@ img {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-    color: var(--primaru-text-color);
+    color: var(--primary-text-color);
   }
   .logo__color {
     font-family: var(--secondary-font);
@@ -639,7 +634,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 .portfolio__rubric {
@@ -759,7 +754,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 .portfolio__rubric {
@@ -921,9 +916,7 @@ img {
   color: #FFFFFF;
 }
 
-/* Иконки в подвале */
 .footer__social {
-  display: block;
   padding-bottom: 60px;
 }
 
@@ -1069,6 +1062,7 @@ img {
   }
   .footer__box-contact {
     text-align: inherit;
+    padding-bottom: 0px;
   }
   .footer__item:not(:last-child) {
     margin-bottom: 9px;
@@ -1097,9 +1091,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .subscription__form {
-    margin: 0;
   }
   .subscription__button {
     margin-left: 12px;

@@ -33,7 +33,7 @@
 
      letter-spacing: 0.03em;
      text-transform: uppercase;
-     color: var(--primaru-text-color);
+     color: var(--primary-text-color);
      text-align: center;
  }
 
@@ -70,11 +70,7 @@
 
            }
     
-   .features__container-icon{
-       display: flex;
-    padding: 25px 144px;
-    
-}
+  
 .features__title {
     text-align: inherit;}
 }
@@ -111,11 +107,9 @@
 
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: var(--primaru-text-color);
+        color: var(--primary-text-color);
     }
-    .features__container-icon{
-     padding: 0;
-    }
+   
 }
     
 
