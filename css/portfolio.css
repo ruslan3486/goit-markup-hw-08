@@ -27,7 +27,7 @@
 body {
   font-family: var(--main-font);
   background-color: var(--color-text-white);
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 h1,
@@ -55,7 +55,7 @@ img {
 
 .link {
   text-decoration: none;
-  color: var(--primaru-text-color);
+  color: var(--primary-text-color);
 }
 
 .list {
