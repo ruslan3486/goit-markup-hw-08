@@ -1,4 +1,8 @@
-
+     
+       
+        
+       
+    
    .header  {
         margin: 0 auto;
        
@@ -28,19 +32,7 @@
             color: var(--accent-color);
            } 
 
-
-
-
-
-
-
-      
-             
-             
-
-   
-       
-    .menu{
+ .menu{
         display: none;
     }
     
@@ -210,22 +202,15 @@
         letter-spacing: 0.02em;
         color: var(--accent-color);
        
-        padding-right: 10px;
+        padding-right: 10px;}
 
        
-          
-        //   &::after {
-        //       position: absolute;
-        //       content: '';
-        //      bottom: 0;
-        //      right: 0;
-        //       display: block;
-        //       height: 100%;
-           
-        //       border: 1px solid rgba(33, 33, 33, 0.2);
-        //      transform: rotate(180deg) translateX(-10px);}
-
-         }
+        @media screen and (max-width: 480px){
+            .mobile-menu__link-tel {
+              font-weight: 500;
+               font-size: 26px;
+          }
+      }
 
     @media screen and (min-width: 768px){
          .mobile-menu__item-ikon:not(:last-child){
@@ -458,3 +443,16 @@
 
 
 
+
+
+
+
+
+
+      
+             
+             
+
+   
+       
+   

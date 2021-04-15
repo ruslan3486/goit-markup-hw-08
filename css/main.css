@@ -330,6 +330,13 @@ img {
   padding-right: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .mobile-menu__link-tel {
+    font-weight: 500;
+    font-size: 26px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu__item-ikon:not(:last-child) {
     margin-right: 20px;
@@ -764,7 +771,6 @@ img {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-left: -30px;
   }
   .features__item {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);

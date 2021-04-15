@@ -330,6 +330,13 @@ img {
   padding-right: 10px;
 }
 
+@media screen and (max-width: 480px) {
+  .mobile-menu__link-tel {
+    font-weight: 500;
+    font-size: 26px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu__item-ikon:not(:last-child) {
     margin-right: 20px;
